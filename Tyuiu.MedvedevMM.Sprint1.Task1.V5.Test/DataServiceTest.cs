@@ -5,7 +5,7 @@ namespace Tyuiu.MedvedevMM.Sprint1.Task1.V5.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void Validexprassion()
+        public void Validexpression()
         {
             DataService ds = new DataService();
             double x = 1.0;
