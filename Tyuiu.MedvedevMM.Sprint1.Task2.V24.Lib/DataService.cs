@@ -6,7 +6,7 @@ namespace Tyuiu.MedvedevMM.Sprint1.Task2.V24.Lib
         public int CalculateDiffSquare(int value, int valueTwo)
         {
             int diffSquare = value - valueTwo;
-            return diffSquare = diffSquare * diffSquare ;
+            return diffSquare * diffSquare ;
         }
     }
 }
