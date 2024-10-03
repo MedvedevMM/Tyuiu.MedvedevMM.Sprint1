@@ -8,10 +8,10 @@ namespace Tyuiu.MedvedevMM.Sprint1.Task2.V24.Test
         public void Validexpression()
         {
             DataService ds = new DataService();
-            int x = 4;
-            int y = 2;
+            int x = 6;
+            int y = 3;
             var res = ds.CalculateDiffSquare(x, y);
-            Assert.AreEqual(8, res);
+            Assert.AreEqual(9, res);
         }
     }
 }
