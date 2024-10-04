@@ -23,15 +23,19 @@ namespace Tyuiu.MedvedevMM.Sprint1.Task3.V15
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            double v1 = 68.51;
-            double v2 = 64.91;
-            double S = 52.36;
-            double T = 3.51;
+            double v1, v2, S, T;
 
-            Console.WriteLine("Скорость первого автомобиля = " + v1);
-            Console.WriteLine("Скорость второго автомобиля = " + v2);
-            Console.WriteLine("Начальное расстояние между автомобилями = " + S);
-            Console.WriteLine("Время движения = " + T);
+            Console.WriteLine("Введите cкорость первого автомобиля:");
+            v1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Введите Скорость второго автомобиля:");
+            v2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Введите Начальное расстояние между автомобилями:");
+            S = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Введите Время движения:");
+            T = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
