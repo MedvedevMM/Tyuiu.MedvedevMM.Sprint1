@@ -5,11 +5,15 @@ namespace Tyuiu.MedvedevMM.Sprint1.Task6.V6.Lib
     {
         public string DeleteFirstLetter(string value)
         {
-            
-            foreach (string s in value.Split(' '))
-            value = value + " " + s.Substring(1);
-            value = value.Trim();
-            return value;
-        }
+            string[] words = value.Split(' ');
+
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (words[i].Length > 0)
+                    words[i] = words[i].Substring(1);
+            }
+          
+            return string.Join(" ", words).Trim();
+        } 
     }
 }

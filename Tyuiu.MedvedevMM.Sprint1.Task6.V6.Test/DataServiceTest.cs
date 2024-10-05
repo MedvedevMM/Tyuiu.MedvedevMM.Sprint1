@@ -7,10 +7,10 @@ namespace Tyuiu.MedvedevMM.Sprint1.Task6.V6.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string Test = "Программирование это пизда";
+            string Test = "Привет мир";
             DataService ds = new DataService();
             string res = ds.DeleteFirstLetter(Test);
-            string wait = "рограммирование то изда";
+            string wait = "ривет ир";
             Assert.AreEqual(wait, res);
 
         }
