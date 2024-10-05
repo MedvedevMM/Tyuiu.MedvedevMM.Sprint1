@@ -1,5 +1,5 @@
-﻿using Tyuiu.MedvedevMM.Sprint1.Task5.V1.Lib;
-namespace Tyuiu.MedvedevMM.Sprint1.Task5.V1
+﻿using Tyuiu.MedvedevMM.Sprint1.Task6.V6.Lib;
+namespace Tyuiu.MedvedevMM.Sprint1.Task6.V6
 {
     internal class Program
     {
@@ -10,27 +10,29 @@ namespace Tyuiu.MedvedevMM.Sprint1.Task5.V1
             Console.Title = "Спринт #1 | Выполнил: Медведев М.М. | РППб-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
-            Console.WriteLine("* Тема: Преобразование типов и класс Convert                              *");
+            Console.WriteLine("* Тема: Работа со строками класс String                                   *");
             Console.WriteLine("* Задание #6                                                              *");
             Console.WriteLine("* Вариант #15                                                             *");
             Console.WriteLine("* Выполнил: Медведев Матвей Максимович | РППб-24-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Написать программу: пользователь вводит текст.                          *");
-            Console.WriteLine("* Проверить, что в строке больше букв, чем знаков.                        *");
+            Console.WriteLine("* Напечатать все слова, удалив из них первую букву.                       *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Введите текст:");
+            
+            Console.WriteLine("Введите текст: ");
             string value = Console.ReadLine();
+
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            bool re
+            Console.WriteLine(ds.DeleteFirstLetter(value));
 
             Console.ReadKey();
         }

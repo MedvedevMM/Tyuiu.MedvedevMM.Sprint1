@@ -1,5 +1,5 @@
-﻿using Tyuiu.MedvedevMM.Sprint1.Task5.V1.Lib;
-namespace Tyuiu.MedvedevMM.Sprint1.Task5.V1
+﻿using Tyuiu.MedvedevMM.Sprint1.Task6.V15.Lib;
+namespace Tyuiu.MedvedevMM.Sprint1.Task6.V15
 {
     internal class Program
     {
@@ -11,26 +11,35 @@ namespace Tyuiu.MedvedevMM.Sprint1.Task5.V1
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
             Console.WriteLine("* Тема: Преобразование типов и класс Convert                              *");
-            Console.WriteLine("* Задание #6                                                              *");
-            Console.WriteLine("* Вариант #15                                                             *");
+            Console.WriteLine("* Задание #5                                                              *");
+            Console.WriteLine("* Вариант #1                                                              *");
             Console.WriteLine("* Выполнил: Медведев Матвей Максимович | РППб-24-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу: пользователь вводит текст.                          *");
-            Console.WriteLine("* Проверить, что в строке больше букв, чем знаков.                        *");
+            Console.WriteLine("* Написать программу, которая решает следующую задачу:                    *");
+            Console.WriteLine("* Найти расстояние между двумя точками с заданными координатами (x, y).   *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Введите текст:");
-            string value = Console.ReadLine();
+            string value;
+            Console.WriteLine("Введите текст: ");
+            
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            bool re
+            bool result = ds.CheckLettersCount(value);
+            if (result)
+            {
+                Console.WriteLine("В строке бельше букв, чем знаков");
+            }
+            else
+            {
+                Console.WriteLine("В строке больше знаков, чем букв");
+            }
 
             Console.ReadKey();
         }
