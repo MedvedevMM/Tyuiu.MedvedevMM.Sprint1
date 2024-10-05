@@ -1,5 +1,5 @@
-﻿using Tyuiu.MedvedevMM.Sprint1.Task6.V15.Lib;
-namespace Tyuiu.MedvedevMM.Sprint1.Task6.V15
+﻿using Tyuiu.MedvedevMM.Sprint1.Task7.V6.Lib;
+namespace Tyuiu.MedvedevMM.Sprint1.Task7.V6
 {
     internal class Program
     {
@@ -10,36 +10,38 @@ namespace Tyuiu.MedvedevMM.Sprint1.Task6.V15
             Console.Title = "Спринт #1 | Выполнил: Медведев М.М. | РППб-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
-            Console.WriteLine("* Тема: Преобразование типов и класс Convert                              *");
-            Console.WriteLine("* Задание #5                                                              *");
-            Console.WriteLine("* Вариант #1                                                              *");
+            Console.WriteLine("* Тема: Добавление к решению итоговых проектов по спринту                 *");
+            Console.WriteLine("* Задание #7                                                              *");
+            Console.WriteLine("* Вариант #6                                                              *");
             Console.WriteLine("* Выполнил: Медведев Матвей Максимович | РППб-24-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая решает следующую задачу:                    *");
-            Console.WriteLine("* Найти расстояние между двумя точками с заданными координатами (x, y).   *");
+            Console.WriteLine("* Написать программу, которая вычисляет математическое выражение          *");
+            Console.WriteLine("* по исходным значениям данных, вводимых пользователем.                   *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
+            Console.WriteLine("          1   x         2    ");
+            Console.WriteLine("z = (1 + --- )  - 12 * x * y ");
+            Console.WriteLine("           2                 ");
+            Console.WriteLine("          x                  ");
+             
+            double x, y;
 
-            string value;
-            Console.WriteLine("Введите текст: ");
-            
+            Console.WriteLine("Введите значение X:");
+            x = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите значение Y:");
+            y = Convert.ToDouble(Console.ReadLine());
+
+
+
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            bool result = ds.CheckLettersCount(value);
-            if (result)
-            {
-                Console.WriteLine("В строке бельше букв, чем знаков");
-            }
-            else
-            {
-                Console.WriteLine("В строке больше знаков, чем букв");
-            }
+            Console.WriteLine(ds.Calculate(x, y));
 
             Console.ReadKey();
         }
